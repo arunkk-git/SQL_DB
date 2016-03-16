@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fb6cda"
+    tools:context="tech.sree.com.sql_db.MainActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Contact"
+        android:id="@+id/add"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#e3ca0c"
+        android:textColor="#0925f9"
+        android:onClick="add_UpdateContact"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View Contact"
+        android:id="@+id/view"
+        android:background="#e3ca0c"
+        android:textColor="#0925f9"
+        android:layout_below="@+id/add"
+        android:layout_centerHorizontal="true"
+        android:onClick="viewContactInfo"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Contact"
+        android:id="@+id/search"
+        android:onClick="searchContent"
+        android:background="#e3ca0c"
+        android:textColor="#0925f9"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Contact"
+        android:id="@+id/delete"
+        android:background="#e3ca0c"
+        android:textColor="#0925f9"
+        android:layout_below="@+id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Contact"
+        android:id="@+id/update"
+        android:background="#e3ca0c"
+        android:textColor="#0925f9"
+        android:layout_below="@+id/delete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
