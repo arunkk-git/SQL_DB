@@ -58,6 +58,18 @@ public class UserDBHelper extends SQLiteOpenHelper {
         return cursor;
 
     }
+    public  int updateExistingEntry(String old_name,String new_name,String new_mobile,String new_email,SQLiteDatabase db){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Contract.NewUserInfo.USER_NAME,new_name);
+        contentValues.put(Contract.NewUserInfo.USER_MOBILE,new_mobile);
+        contentValues.put(Contract.NewUserInfo.USER_EMAIL, new_mobile);
+
+        String selection = Contract.NewUserInfo.USER_NAME+" LIKE ?";
+        String [] selection_args ={old_name};
+
+        return db.update(Contract.NewUserInfo.USER_TABLE,contentValues,selection,selection_args);
+
+    }
 
     public void deleteEntryFromDataBase(String name,SQLiteDatabase db){
         String selection = Contract.NewUserInfo.USER_NAME+" LIKE ?";

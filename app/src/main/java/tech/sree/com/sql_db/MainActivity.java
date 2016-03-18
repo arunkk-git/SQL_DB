@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
         startActivity(intent);
     }
+
+    public void Update_Exsiting_userInfo(View V){
+        Intent intent = new Intent(getApplicationContext(), Update_Info.class);
+        startActivity(intent);
+    }
 }

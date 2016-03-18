@@ -7,11 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fb6cda"
     tools:context="tech.sree.com.sql_db.Update_Info">
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Update Information"
@@ -20,4 +21,63 @@
         android:textColor="#0000ff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:text="Search"
+        android:id="@+id/find_text_Update"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignRight="@+id/new_update"
+        android:layout_alignEnd="@+id/new_update" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="New Mobile"
+        android:id="@+id/new_mobile"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="New Email"
+        android:id="@+id/new_email"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/new_mobile"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:onClick="searchInfo"
+        android:id="@+id/search_update"
+        android:layout_alignBaseline="@+id/find_text_Update"
+        android:layout_alignBottom="@+id/find_text_Update"
+        android:layout_toRightOf="@+id/new_update"
+        android:layout_toEndOf="@+id/new_update" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:text="New Name"
+        android:id="@+id/new_name"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/new_mobile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Info"
+        android:id="@+id/new_update"
+        android:onClick="updateInfo"
+        android:layout_below="@+id/new_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
 </RelativeLayout>
